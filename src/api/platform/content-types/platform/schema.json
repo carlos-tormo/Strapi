@@ -16,11 +16,11 @@
       "unique": true,
       "required": true
     },
-    "game": {
+    "editions": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::game.game",
-      "inversedBy": "platforms"
+      "relation": "oneToMany",
+      "target": "api::edition.edition",
+      "mappedBy": "platform"
     }
   }
 }

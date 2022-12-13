@@ -1,9 +1,9 @@
 'use strict';
 
 /**
- * game service.
+ * edition service.
  */
 
 const { createCoreService } = require('@strapi/strapi').factories;
 
-module.exports = createCoreService('api::game.game');
+module.exports = createCoreService('api::edition.edition');

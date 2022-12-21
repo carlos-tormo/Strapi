@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ggz_users",
+  "info": {
+    "singularName": "ggz-user",
+    "pluralName": "ggz-users",
+    "displayName": "Ggz_user"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "UUID": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

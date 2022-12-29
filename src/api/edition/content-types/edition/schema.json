@@ -25,9 +25,6 @@
       "target": "api::platform.platform",
       "inversedBy": "editions"
     },
-    "developer": {
-      "type": "string"
-    },
     "release_date": {
       "type": "date"
     },
@@ -56,6 +53,12 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::language.language",
+      "inversedBy": "editions"
+    },
+    "developer": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::developer.developer",
       "inversedBy": "editions"
     }
   }

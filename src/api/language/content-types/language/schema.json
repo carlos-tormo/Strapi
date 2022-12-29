@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "languages",
+  "info": {
+    "singularName": "language",
+    "pluralName": "languages",
+    "displayName": "Language"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "editions": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::edition.edition",
+      "inversedBy": "languages"
+    }
+  }
+}

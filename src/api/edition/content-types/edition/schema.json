@@ -48,6 +48,15 @@
       "relation": "manyToMany",
       "target": "api::mode.mode",
       "inversedBy": "editions"
+    },
+    "description": {
+      "type": "string"
+    },
+    "languages": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::language.language",
+      "inversedBy": "editions"
     }
   }
 }

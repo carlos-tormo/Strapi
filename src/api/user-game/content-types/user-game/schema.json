@@ -4,15 +4,33 @@
   "info": {
     "singularName": "user-game",
     "pluralName": "user-games",
-    "displayName": "user_game"
+    "displayName": "user_game",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "name": {
-      "type": "string"
+    "edition": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::edition.edition",
+      "inversedBy": "user_games"
+    },
+    "ggz_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::ggz-user.ggz-user",
+      "inversedBy": "user_games"
+    },
+    "status_game": {
+      "type": "enumeration",
+      "enum": [
+        "Currently playing",
+        "Completed"
+      ],
+      "required": true
     }
   }
 }

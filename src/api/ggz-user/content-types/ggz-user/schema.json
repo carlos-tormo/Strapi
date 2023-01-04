@@ -20,6 +20,12 @@
       "type": "string",
       "required": true,
       "unique": true
+    },
+    "user_games": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-game.user-game",
+      "mappedBy": "ggz_user"
     }
   }
 }

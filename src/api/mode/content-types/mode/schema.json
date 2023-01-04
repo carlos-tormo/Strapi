@@ -4,7 +4,8 @@
   "info": {
     "singularName": "mode",
     "pluralName": "modes",
-    "displayName": "mode"
+    "displayName": "mode",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,7 +13,8 @@
   "pluginOptions": {},
   "attributes": {
     "type": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "editions": {
       "type": "relation",

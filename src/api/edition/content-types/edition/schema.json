@@ -60,6 +60,12 @@
       "relation": "manyToOne",
       "target": "api::developer.developer",
       "inversedBy": "editions"
+    },
+    "user_games": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-game.user-game",
+      "mappedBy": "edition"
     }
   }
 }

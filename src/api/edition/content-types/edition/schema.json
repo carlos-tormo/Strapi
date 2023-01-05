@@ -34,7 +34,8 @@
         "First edition",
         "Collector edition",
         "Reissue",
-        "Promotional"
+        "Promotional",
+        "Early access"
       ]
     },
     "region": {

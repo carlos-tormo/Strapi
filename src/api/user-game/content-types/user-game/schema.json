@@ -28,7 +28,9 @@
       "type": "enumeration",
       "enum": [
         "Currently playing",
-        "Completed"
+        "Completed",
+        "Completed100",
+        "Done"
       ],
       "required": true
     }

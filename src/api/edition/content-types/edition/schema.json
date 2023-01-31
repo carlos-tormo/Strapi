@@ -35,7 +35,8 @@
         "Collector edition",
         "Reissue",
         "Promotional",
-        "Early access"
+        "Early access",
+        "DLC"
       ]
     },
     "region": {
@@ -67,6 +68,25 @@
       "relation": "oneToMany",
       "target": "api::user-game.user-game",
       "mappedBy": "edition"
+    },
+    "master": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::master.master",
+      "inversedBy": "editions"
+    },
+    "format": {
+      "type": "enumeration",
+      "enum": [
+        "Digital edition",
+        "Physical edition"
+      ]
+    },
+    "publishers": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::publisher.publisher",
+      "inversedBy": "editions"
     }
   }
 }

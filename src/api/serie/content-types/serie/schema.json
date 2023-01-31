@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "developers",
+  "collectionName": "series",
   "info": {
-    "singularName": "developer",
-    "pluralName": "developers",
-    "displayName": "developer",
+    "singularName": "serie",
+    "pluralName": "series",
+    "displayName": "Serie",
     "description": ""
   },
   "options": {
@@ -17,14 +17,11 @@
       "required": true,
       "unique": true
     },
-    "editions": {
+    "masters": {
       "type": "relation",
       "relation": "oneToMany",
-      "target": "api::edition.edition",
-      "mappedBy": "developer"
-    },
-    "region": {
-      "type": "string"
+      "target": "api::master.master",
+      "mappedBy": "series"
     }
   }
 }

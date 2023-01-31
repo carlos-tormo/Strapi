@@ -1,10 +1,10 @@
 {
   "kind": "collectionType",
-  "collectionName": "platforms",
+  "collectionName": "publishers",
   "info": {
-    "singularName": "platform",
-    "pluralName": "platforms",
-    "displayName": "platforms"
+    "singularName": "publisher",
+    "pluralName": "publishers",
+    "displayName": "Publisher"
   },
   "options": {
     "draftAndPublish": true
@@ -13,20 +13,20 @@
   "attributes": {
     "name": {
       "type": "string",
-      "unique": true,
-      "required": true
+      "required": true,
+      "unique": true
     },
     "editions": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::edition.edition",
-      "mappedBy": "platform"
+      "inversedBy": "publishers"
     },
     "masters": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::master.master",
-      "mappedBy": "platforms"
+      "inversedBy": "publishers"
     }
   }
 }

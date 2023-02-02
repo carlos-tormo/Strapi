@@ -81,12 +81,6 @@
         "Digital edition",
         "Physical edition"
       ]
-    },
-    "publishers": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::publisher.publisher",
-      "inversedBy": "editions"
     }
   }
 }

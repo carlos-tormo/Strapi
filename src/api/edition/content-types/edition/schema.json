@@ -39,9 +39,6 @@
         "DLC"
       ]
     },
-    "region": {
-      "type": "string"
-    },
     "modes": {
       "type": "relation",
       "relation": "manyToMany",
@@ -81,6 +78,12 @@
         "Digital edition",
         "Physical edition"
       ]
+    },
+    "region": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::region.region",
+      "inversedBy": "editions"
     }
   }
 }
